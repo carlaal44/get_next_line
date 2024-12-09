@@ -6,7 +6,7 @@
 /*   By: carfern2 <carfern2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 11:49:11 by carfern2          #+#    #+#             */
-/*   Updated: 2024/12/09 12:40:40 by carfern2         ###   ########.fr       */
+/*   Updated: 2024/12/02 14:06:38 by carfern2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+# define BUFFER_SIZE 1
 # endif
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
@@ -27,5 +26,9 @@ size_t	ft_strlen(const char *s);
 char	*ft_strjoin(const char *s1, const char *s2);
 void	*ft_calloc(size_t count, size_t size);
 char	*get_next_line(int fd);
+char	*ft_line(char *buffer);
+char	*ft_next(char *buffer);
+char	*read_file(int fd, char *res);
+char	*ft_free(char *buffer, char *buf);
 
 #endif
