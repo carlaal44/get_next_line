@@ -1,0 +1,6 @@
+Hola, este es un archivo de prueba.
+Vamos a leerlo línea por línea.
+Si puedes ver esta línea, ¡todo funciona bien!
+Buena suerte con tu proyecto.
+Fin de archivo.
+
